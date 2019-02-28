@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     TextView answer4;
     TextView countdown;
     CountDownTimer timer;
-    Boolean gameIsActive;
     int locationOfCorrectAnswer;
     int score = 0;
     int numberOfQuestions = 0;
@@ -71,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
     public void start(View view) {
+
+        answers.clear();
 
         generateQuestion();
 
